@@ -1,0 +1,48 @@
+.footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0 0;
+}
+
+.col-1 {
+    float: left;
+    width: 10%;
+}
+.col-2 {
+    float: left;
+    width: 20%;
+}
+.col-3 {
+    float: left;
+    width: 30%;
+}
+.col-4 {
+    float: left;
+    width: 40%;
+}
+.col-5 {
+    float: left;
+    width: 50%;
+}
+.col-6 {
+    float: left;
+    width: 60%;
+}
+.col-7 {
+    float: left;
+    width: 70%;
+}
+.col-8 {
+    float: left;
+    width: 80%;
+}
+.col-9 {
+    float: left;
+    width: 90%;
+}
+.col-10 {
+    float: left;
+    width: 100%;
+}

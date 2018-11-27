@@ -1,0 +1,14 @@
+.dialog {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 0;
+    background: white;
+}
+
+.dialog-content-fade {
+    display: none;
+}

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <script src="lib/js/jQuery.js"></script>
+    <link rel="stylesheet" href="lib/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="lib/css/addition-standard.css"/>
+    <script src="lib/js/bootstrap.min.js"></script>
+    <title id="menu-title">Loading...</title>
+</head>
+<body>
+<div id="layout-master" class="container-fluid">
+    <div id="layout-title">
+        <h1 id="title-text" class="text-center">题目</h1>
+    </div>
+    <div id="layout-comment">
+        <p class="col-8 offset-2">文字说明</p>
+    </div>
+    <div class="footer">
+        <div id="layout-button-area" style="padding: 0 0;">
+            <button id="button-speak" class="btn btn-lg btn-success" data-toggle="modal" data-target="#dialog-speak" style="width: 49%;">道</button>
+            <button id="button-hear" class="btn btn-lg btn-success" data-toggle="modal" data-target="#dialog-hear" style="width: 49%;">闻</button>
+        </div>
+
+        <!-- 道 盒子选择 -->
+        <div class="modal fade" id="dialog-speak" tabindex="-1" role="dialog" aria-labelledby="dialog-speak" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button id="dialog-speak-button-public" data-toggle="modal" data-target="#dialog-speak-public" class="btn btn-lg btn-success col-12">小盒子</button>
+                    </div>
+                    <div class="modal-body">
+                        <button id="dialog-speak-button-private" data-toggle="modal" data-target="#dialog-speak-private" class="btn btn-lg btn-success col-12">秘密盒子</button>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">返回</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal -->
+        </div>
+
+        <!-- 闻 盒子选择 -->
+        <div class="modal fade" id="dialog-hear" tabindex="-1" role="dialog" aria-labelledby="dialog-hear" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button id="dialog-hear-button-public" data-toggle="modal" data-target="#dialog-hear-public" class="btn btn-lg btn-success col-12">小盒子</button>
+                    </div>
+                    <div class="modal-body">
+                        <button id="dialog-hear-button-private" data-toggle="modal" data-target="#dialog-hear-private" class="btn btn-lg btn-success col-12">秘密盒子</button>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">返回</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal -->
+        </div>
+
+        <!-- 道 公共盒子 -->
+        <div class="modal fade" id="dialog-speak-public" tabindex="-1" role="dialog" aria-labelledby="dialog-speak-public" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">请大声喊出平安夜你想对TA说出的话</h4>
+                    </div>
+                    <div class="modal-body">
+                        <textarea class="form-control" id="dialog-speak-public-text" rows="3" placeholder="请写下想对TA说的话吧"></textarea>
+                    </div>
+                    <div class="modal-body">
+                        <label for="dialog-speak-public-selectPic">请选择配图</label>
+                        <div id="dialog-speak-public-selectPic">
+                            <label class="radio-inline" style="width: 32%">
+                                <img src="pic/test001.jpg" class="col-12"/>
+                                <input type="radio" id="dialog-speak-public-imgOption1" value="1" checked> 选项 1
+                            </label>
+                            <label class="radio-inline" style="width: 32%">
+                                <img src="pic/test002.jpg" class="col-12"/>
+                                <input type="radio" id="dialog-speak-public-imgOption2"  value="2"> 选项 2
+                            </label>
+                            <label class="radio-inline" style="width: 32%">
+                                <img src="pic/test003.jpg" class="col-12"/>
+                                <input type="radio" id="dialog-speak-public-imgOption3"  value="3"> 选项 2
+                            </label>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">我再想想</button>
+                        <button type="button" class="btn btn-primary">确认提交</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal -->
+        </div>
+
+        <!-- 道 私密盒子 -->
+        <div class="modal fade" id="dialog-speak-private" tabindex="-1" role="dialog" aria-labelledby="dialog-speak-private" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">请悄悄说出平安夜你想对TA说出的话</h4>
+                    </div>
+                    <div class="modal-body">
+                        <textarea class="form-control" id="dialog-speak-private-text" rows="3" placeholder="请写下想对TA说的话吧"></textarea>
+                    </div>
+                    <div class="modal-body">
+                        <input type="text" class="form-control" id="dialog-speak-private-password" placeholder="请设置你的密语"/>
+                        <button type="button" class="btn btn-primary" id="dialog-speak-private-password-auth">检查可用性</button>
+                    </div>
+                    <div class="modal-body">
+                        <label for="dialog-speak-private-selectPic">请选择配图</label>
+                        <div id="dialog-speak-private-selectPic">
+                            <label class="radio-inline" style="width: 32%">
+                                <img src="pic/test001.jpg" class="col-12"/>
+                                <input type="radio" id="dialog-speak-private-imgOption1" value="1" checked> 选项 1
+                            </label>
+                            <label class="radio-inline" style="width: 32%">
+                                <img src="pic/test002.jpg" class="col-12"/>
+                                <input type="radio" id="dialog-speak-private-imgOption2"  value="2"> 选项 2
+                            </label>
+                            <label class="radio-inline" style="width: 32%">
+                                <img src="pic/test003.jpg" class="col-12"/>
+                                <input type="radio" id="dialog-speak-private-imgOption3"  value="3"> 选项 2
+                            </label>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">我再想想</button>
+                        <button type="button" class="btn btn-primary">确认提交</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal -->
+        </div>
+
+        <!-- 闻 公共盒子进入界面 -->
+        <div class="modal fade" id="dialog-hear-public" tabindex="-1" role="dialog" aria-labelledby="dialog-hear-public" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        你知道吗<br/>
+                        你将会听到<br/>
+                        一位在平安夜<br/>
+                        希望你幸福的人<br/>
+                        TA的心声
+                    </div>
+                    <div class="modal-body">
+                        <button type="button" class="btn btn-primary" id="dialog-hear-public-open" data-toggle="modal" data-target="#dialog-hear-public-list" class="btn btn-lg btn-success">选择打开</button>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">返回</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal -->
+        </div>
+
+        <!-- 闻 公共盒子消息选择 -->
+        <div class="modal fade" id="dialog-hear-public-list" tabindex="-1" role="dialog" aria-labelledby="dialog-hear-public-list" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">小盒子列表</div>
+                    <div class="modal-body">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#dialog-hear-master">
+                                    <span class="badge">今天 13:41</span>
+                                    From 戴高乐
+                                </button>
+                            </li>
+                            <li class="list-group-item">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                    <span class="badge">今天 13:40</span>
+                                    From 匿名用户
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal-body">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">返回</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal -->
+        </div>
+
+        <!-- 闻 私密盒子进入界面 -->
+        <div class="modal fade" id="dialog-hear-private" tabindex="-1" role="dialog" aria-labelledby="dialog-hear-private" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">私密盒子</div>
+                    <div class="modal-body">
+                        <input type="text" class="form-control" id="dialog-hear-private-password" placeholder="请输入密语"/>
+                        <button type="button" class="btn btn-primary" id="dialog-hear-private-password-auth" data-toggle="modal" data-target="#dialog-hear-master">进入</button>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">返回</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal -->
+        </div>
+
+        <!-- 闻 消息显示界面 -->
+        <div class="modal fade" id="dialog-hear-master" tabindex="-1" role="dialog" aria-labelledby="dialog-hear-master" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="badge">今天 13:41</span>
+                        From 戴高乐
+                    </div>
+                    <div class="modal-body">
+                        表白软件园学长耿继勋！！！学长我爱你啊！！！
+                    </div>
+                    <div class="modal-body">
+                        <img src="pic/test001.jpg" class="col-12"/>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">返回</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal -->
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
