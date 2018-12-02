@@ -33,6 +33,9 @@ body {
 .flex-around {
     justify-content: space-around;
 }
+.flex-between {
+    justify-content: space-between;
+}
 .flex-center {
     justify-content: center;
     align-items: center;
@@ -44,8 +47,23 @@ body {
 .padding-sm {
     padding: 8px 8px;
 }
+.padding-mi {
+    padding: 15px 15px;
+}
+.padding-lg {
+    padding: 25px 25px;
+}
 .margin-none {
     margin: 0;
+}
+.margin-lg {
+    margin: 25px 25px;
+}
+
+.circled-border {
+    border-radius: 10px;
+    border: dashed white 1px;
+    color: white;
 }
 
 .background {
