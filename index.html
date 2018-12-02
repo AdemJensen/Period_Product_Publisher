@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-CN" class="general-background">
 <head>
     <meta charset="UTF-8">
     <script type="text/javascript" src="lib/js/jQuery.js" ></script>
@@ -20,7 +20,7 @@
     <title>Title</title>
 </head>
 <body class="margin-none">
-<div id="decorate-header" class="flex flex-row flex-around padding-sm">
+<div class="flex flex-row flex-around padding-sm decorate-header">
     <img src="resource/decorate-header/1.png" class="ln-12"/>
     <img src="resource/decorate-header/2.png" class="ln-12"/>
     <img src="resource/decorate-header/3.png" class="ln-12"/>
@@ -29,32 +29,63 @@
 </div>
 <div class="col-12 padding-none background" style="height: 93%">
     <div class="col-12 ln-4 flex flex-center">
+        <img id="decorate-cap" src="resource/masterPage/cap.png"/>
         <p id="description" class="col-8 ln-6 circled-border padding-lg">VOID</p>
     </div>
     <div class="col-12 ln-6 flex flex-center">
         <img src="resource/decorate-master/santa.png" class="ln-11 margin-lg"/>
     </div>
-    <div class="col-12 ln-2 flex flex-between margin-none" style="background: #0f674b">
-        <div class="flex flex-center ln-12">
-            <img src="resource/masterPage-button/light.png" class="ln-8"/>
-            <img src="resource/masterPage-button/hear.png" class="ln-6"/>
+    <div class="col-12 ln-2 flex flex-between margin-none general-background">
+        <div class="flex flex-center ln-12" dialog-target="#dialog-speak">
+            <img src="resource/masterPage/light.png" class="ln-8"/>
+            <img src="resource/masterPage/speak.png" class="ln-6"/>
         </div>
-        <div class="flex flex-center ln-12">
-            <img src="resource/masterPage-button/mail.png" class="ln-8"/>
-            <img src="resource/masterPage-button/speak.png" class="ln-6"/>
+        <div class="flex flex-center ln-12" dialog-target="#dialog-hear">
+            <img src="resource/masterPage/mail.png" class="ln-8"/>
+            <img src="resource/masterPage/hear.png" class="ln-6"/>
         </div>
     </div>
-    <!--<div class="col-5" style="background-color: #005cbf">哈哈哈</div>
-    <div class="col-5" style="background-color: #002752">嘿嘿嘿</div>
-    <button dialog-target="#haha">显示对话框</button>
-    <div class="dialog" id="haha" style="background-color: #9fcdff">
-        <div class="dialog-content-fade">
-            嘿嘿嘿嘿嘿
-            <button dialog-close-target="#haha">隐藏对话框</button>
-        </div>
-    </div>-->
 
 </div>
+
+<!-- "道"主界面 -->
+<div class="dialog general-background" id="dialog-speak">
+    <div class="dialog-content-fade">
+
+    </div>
+</div>
+
+<!-- "闻"主界面 -->
+<div class="dialog general-background ln-12" id="dialog-hear">
+    <div class="dialog-content-fade ln-12">
+        <div class="flex flex-row flex-around padding-sm decorate-header">
+            <img src="resource/decorate-header/1.png" class="ln-12"/>
+            <img src="resource/decorate-header/2.png" class="ln-12"/>
+            <img src="resource/decorate-header/3.png" class="ln-12"/>
+            <img src="resource/decorate-header/4.png" class="ln-12"/>
+            <img src="resource/decorate-header/5.png" class="ln-12"/>
+        </div>
+        <div class="col-12 ln-12 padding-none background flex flex-center flex-column" style="height: 93%">
+            <div class="col-6 ln-5 circled-border padding-lg margin-mi flex flex-center">
+                <img src="resource/dialog-hear/text.png" class="ln-11"/>
+            </div>
+            <div class="col-6 ln-7 flex flex-around flex-column margin-lg">
+                <div class="ln-3 flex flex-center flex-column">
+                    <img src="resource/dialog-hear/text_select.png" class="ln-6"/>
+                    <img src="resource/dialog-hear/ico_select.png" class="ln-6"/>
+                </div>
+                <div class="ln-3 flex flex-center flex-column" dialog-close-target="#dialog-hear">
+                    <img src="resource/dialog-hear/text_back.png" class="ln-6"/>
+                    <img src="resource/dialog-hear/ico_back.png" class="ln-6"/>
+                </div>
+            </div>
+        </div>
+        <img id="decorate-santa1" src="resource/dialog-hear/santa1.png"/>
+        <img id="decorate-santa2" src="resource/dialog-hear/santa2.png"/>
+    </div>
+</div>
+
+
 
 
 
