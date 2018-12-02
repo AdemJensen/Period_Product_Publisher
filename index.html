@@ -13,16 +13,44 @@
     <link rel="stylesheet" href="lib/css/gridSystem.css" />
     <script type="text/javascript" src="lib/js/dialogPanel.js" ></script>
 
+    <link rel="stylesheet" href="lib/css/BasicStyles.css" />
+
+    <script type="text/javascript" src="lib/js/ScreenDirectionListener.js" ></script>
+
     <title>Title</title>
 </head>
-<body>
-<div class="col-5" style="background-color: #005cbf">哈哈哈</div>
-<div class="col-5" style="background-color: #002752">嘿嘿嘿</div>
-<button dialog-target="#haha">显示对话框</button>
-<div class="dialog" id="haha" style="background-color: #9fcdff">
-    <div class="dialog-content-fade">
-        嘿嘿嘿嘿嘿
-        <button dialog-close-target="#haha">隐藏对话框</button>
+<body class="margin-none">
+<div id="decorate-header" class="flex flex-row flex-around padding-sm">
+    <img src="resource/decorate-header/1.png" class="ln-12"/>
+    <img src="resource/decorate-header/2.png" class="ln-12"/>
+    <img src="resource/decorate-header/3.png" class="ln-12"/>
+    <img src="resource/decorate-header/4.png" class="ln-12"/>
+    <img src="resource/decorate-header/5.png" class="ln-12"/>
+</div>
+<div class="col-12 padding-none background" style="height: 93%">
+
+    <div class="col-5" style="background-color: #005cbf">哈哈哈</div>
+    <div class="col-5" style="background-color: #002752">嘿嘿嘿</div>
+    <button dialog-target="#haha">显示对话框</button>
+    <div class="dialog" id="haha" style="background-color: #9fcdff">
+        <div class="dialog-content-fade">
+            嘿嘿嘿嘿嘿
+            <button dialog-close-target="#haha">隐藏对话框</button>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+<div class="dialog flex flex-center" id="screen-direction-detector" style="background-color: black">
+    <div class="flex flex-center flex-column">
+        <img src="resource/screen-direction-detector/icon.png"/>
+        <p style="color: white">小提示：竖屏浏览以获得最佳使用体验</p>
     </div>
 </div>
 </body>

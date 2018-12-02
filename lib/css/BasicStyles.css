@@ -1,0 +1,54 @@
+html {
+    background-color: #0f674b;
+    height: 100%;
+    overflow: hidden;
+}
+body {
+    height: 100%;
+    overflow: hidden;
+}
+#decorate-header {
+    height: 7%;
+}
+
+.screen-direction-detector-content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.flex {
+    display: -webkit-flex; /* Safari */
+    display: flex;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-around {
+    justify-content: space-around;
+}
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.padding-none {
+    padding: 0;
+}
+.padding-sm {
+    padding: 8px 8px;
+}
+.margin-none {
+    margin: 0;
+}
+
+.background {
+    background-image:url('../../resource/decorate-master/background.png');
+}
+

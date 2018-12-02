@@ -8,41 +8,86 @@
 
 .col-1 {
     float: left;
-    width: 10%;
+    width: 8.3%;
 }
 .col-2 {
     float: left;
-    width: 20%;
+    width: 16.6%;
 }
 .col-3 {
     float: left;
-    width: 30%;
+    width: 25%;
 }
 .col-4 {
     float: left;
-    width: 40%;
+    width: 33.3%;
 }
 .col-5 {
     float: left;
-    width: 50%;
+    width: 41.6%;
 }
 .col-6 {
     float: left;
-    width: 60%;
+    width: 50%;
 }
 .col-7 {
     float: left;
-    width: 70%;
+    width: 58.3%;
 }
 .col-8 {
     float: left;
-    width: 80%;
+    width: 66.6%;
 }
 .col-9 {
     float: left;
-    width: 90%;
+    width: 75%;
 }
 .col-10 {
     float: left;
+    width: 83.3%;
+}
+.col-11 {
+    float: left;
+    width: 91.6%;
+}
+.col-12 {
+    float: left;
     width: 100%;
+}
+
+.ln-1 {
+    height: 8.3%;
+}
+.ln-2 {
+    height: 16.6%;
+}
+.ln-3 {
+    height: 25%;
+}
+.ln-4 {
+    height: 33.3%;
+}
+.ln-5 {
+    height: 41.6%;
+}
+.ln-6 {
+    height: 50%;
+}
+.ln-7 {
+    height: 58.3%;
+}
+.ln-8 {
+    height: 66.6%;
+}
+.ln-9 {
+    height: 75%;
+}
+.ln-10 {
+    height: 83.3%;
+}
+.ln-11 {
+    height: 91.6%;
+}
+.ln-12 {
+    height: 100%;
 }
