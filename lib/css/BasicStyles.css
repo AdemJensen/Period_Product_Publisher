@@ -25,6 +25,7 @@ body {
     border-left-width: 0;
     border-right-width: 0;
     border-bottom-width: 2px;
+    border-bottom-color: white;
 }
 .cont-text-area {
     background-color: transparent;
