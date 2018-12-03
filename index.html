@@ -29,7 +29,7 @@
 </div>
 <div class="col-12 padding-none background" style="height: 93%">
     <div class="col-12 ln-4 flex flex-center">
-        <img id="decorate-cap" src="resource/masterPage/cap.png"/>
+        <img id="decorate-cap" src="resource/master/cap.png"/>
         <p id="description" class="col-8 ln-6 circled-border padding-lg">VOID</p>
     </div>
     <div class="col-12 ln-6 flex flex-center">
@@ -37,12 +37,12 @@
     </div>
     <div class="col-12 ln-2 flex flex-between margin-none general-background">
         <div class="flex flex-center ln-12" dialog-target="#dialog-speak">
-            <img src="resource/masterPage/light.png" class="ln-8"/>
-            <img src="resource/masterPage/speak.png" class="ln-6"/>
+            <img src="resource/master/light.png" class="ln-8"/>
+            <img src="resource/master/speak.png" class="ln-6"/>
         </div>
         <div class="flex flex-center ln-12" dialog-target="#dialog-hear">
-            <img src="resource/masterPage/mail.png" class="ln-8"/>
-            <img src="resource/masterPage/hear.png" class="ln-6"/>
+            <img src="resource/master/mail.png" class="ln-8"/>
+            <img src="resource/master/hear.png" class="ln-6"/>
         </div>
     </div>
 
@@ -50,8 +50,33 @@
 
 <!-- "道"主界面 -->
 <div class="dialog general-background" id="dialog-speak">
-    <div class="dialog-content-fade">
-
+    <div class="dialog-content-fade ln-12">
+        <div class="flex flex-row flex-around padding-sm decorate-header">
+            <img src="resource/decorate-header/1.png" class="ln-12"/>
+            <img src="resource/decorate-header/2.png" class="ln-12"/>
+            <img src="resource/decorate-header/3.png" class="ln-12"/>
+            <img src="resource/decorate-header/4.png" class="ln-12"/>
+            <img src="resource/decorate-header/5.png" class="ln-12"/>
+        </div>
+        <div class="col-12 ln-12 padding-none background flex flex-center flex-column" style="height: 93%">
+            <div class="flex flex-row flex-around ln-5 col-12">
+                <div class="flex flex-column flex-center">
+                    <img src="resource/public/select-box-type/box-public.png" class="ln-8"/>
+                    <img src="resource/public/select-box-type/text-public.png" class="ln-2"/>
+                    <img src="resource/public/select-box-type/claw-public.png" class="ln-2"/>
+                </div>
+                <div class="flex flex-column flex-center">
+                    <img src="resource/public/select-box-type/box-private.png" class="ln-8"/>
+                    <img src="resource/public/select-box-type/text-private.png" class="ln-2"/>
+                    <img src="resource/public/select-box-type/claw-private.png" class="ln-2"/>
+                </div>
+            </div>
+            <div class="flex flex-column flex-center ln-2" dialog-close-target="#dialog-speak">
+                <img src="resource/dialog-hear/master/text_back.png" class="ln-6"/>
+                <img src="resource/dialog-hear/master/ico_back.png" class="ln-6"/>
+            </div>
+            <img src="resource/decorate-master/santa.png" class="ln-5 margin-lg"/>
+        </div>
     </div>
 </div>
 
@@ -67,36 +92,71 @@
         </div>
         <div class="col-12 ln-12 padding-none background flex flex-center flex-column" style="height: 93%">
             <div class="col-6 ln-5 circled-border padding-lg margin-mi flex flex-center">
-                <img src="resource/dialog-hear/text.png" class="ln-11"/>
+                <img src="resource/dialog-hear/master/text.png" class="ln-11"/>
             </div>
             <div class="col-6 ln-7 flex flex-around flex-column margin-lg">
-                <div class="ln-3 flex flex-center flex-column">
-                    <img src="resource/dialog-hear/text_select.png" class="ln-6"/>
-                    <img src="resource/dialog-hear/ico_select.png" class="ln-6"/>
+                <div class="ln-3 flex flex-center flex-column" dialog-target="#dialog-hear-select-type">
+                    <img src="resource/dialog-hear/master/text_select.png" class="ln-6"/>
+                    <img src="resource/dialog-hear/master/ico_select.png" class="ln-6"/>
                 </div>
                 <div class="ln-3 flex flex-center flex-column" dialog-close-target="#dialog-hear">
-                    <img src="resource/dialog-hear/text_back.png" class="ln-6"/>
-                    <img src="resource/dialog-hear/ico_back.png" class="ln-6"/>
+                    <img src="resource/dialog-hear/master/text_back.png" class="ln-6"/>
+                    <img src="resource/dialog-hear/master/ico_back.png" class="ln-6"/>
                 </div>
             </div>
         </div>
-        <img id="decorate-santa1" src="resource/dialog-hear/santa1.png"/>
-        <img id="decorate-santa2" src="resource/dialog-hear/santa2.png"/>
+        <img id="decorate-santa1" src="resource/dialog-hear/master/santa1.png"/>
+        <img id="decorate-santa2" src="resource/dialog-hear/master/santa2.png"/>
     </div>
 </div>
 
+<!-- "道"小盒子 -->
 
+<!-- "道"私密盒子 -->
 
+<!-- "闻"选择类型 -->
+<div class="dialog general-background ln-12" id="dialog-hear-select-type">
+    <div class="dialog-content-fade ln-12">
+        <div class="flex flex-row flex-around padding-sm decorate-header">
+            <img src="resource/decorate-header/1.png" class="ln-12"/>
+            <img src="resource/decorate-header/2.png" class="ln-12"/>
+            <img src="resource/decorate-header/3.png" class="ln-12"/>
+            <img src="resource/decorate-header/4.png" class="ln-12"/>
+            <img src="resource/decorate-header/5.png" class="ln-12"/>
+        </div>
+        <div class="col-12 ln-12 padding-none background flex flex-center flex-column" style="height: 93%">
+            <div class="flex flex-row flex-around ln-5 col-12">
+                <div class="flex flex-column flex-center">
+                    <img src="resource/public/select-box-type/box-public.png" class="ln-8"/>
+                    <img src="resource/public/select-box-type/text-public.png" class="ln-2"/>
+                    <img src="resource/public/select-box-type/claw-public.png" class="ln-2"/>
+                </div>
+                <div class="flex flex-column flex-center">
+                    <img src="resource/public/select-box-type/box-private.png" class="ln-8"/>
+                    <img src="resource/public/select-box-type/text-private.png" class="ln-2"/>
+                    <img src="resource/public/select-box-type/claw-private.png" class="ln-2"/>
+                </div>
+            </div>
+            <div class="flex flex-column flex-center ln-2" dialog-close-target="#dialog-hear-select-type">
+                <img src="resource/dialog-hear/master/text_back.png" class="ln-6"/>
+                <img src="resource/dialog-hear/master/ico_back.png" class="ln-6"/>
+            </div>
+            <img src="resource/decorate-master/santa.png" class="ln-5 margin-lg"/>
+        </div>
+    </div>
+</div>
 
+<!-- "闻"小盒子列表 -->
 
+<!-- "闻"私密盒子输入密码 -->
 
+<!-- "闻"显示器 -->
 
-
-
+<!-- 屏幕方向提示界面 -->
 <div class="flex flex-center dialog" id="screen-direction-detector" style="background-color: black">
     <div class="flex flex-center flex-column">
         <img src="resource/screen-direction-detector/icon.png"/>
-        <p style="color: white">小提示：竖屏浏览以获得最佳使用体验</p>
+        <p style="color: white" onload="alert('FUCK U');">小提示：竖屏浏览以获得最佳使用体验</p>
     </div>
 </div>
 </body>
