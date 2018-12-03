@@ -58,6 +58,9 @@
 .ln-1 {
     height: 8.3%;
 }
+.ln-1\.5 {
+    height: 12%;
+}
 .ln-2 {
     height: 16.6%;
 }
@@ -84,6 +87,9 @@
 }
 .ln-10 {
     height: 83.3%;
+}
+.ln-10\.5 {
+    height: 88%;
 }
 .ln-11 {
     height: 91.6%;
