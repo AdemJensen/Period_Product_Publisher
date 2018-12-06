@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!–[if lt IE 9]><script src="lib/js/css3-mediaQueries.js"></script><![endif]–>
     <!–[if lt IE 9]><script src="lib/js/html5.js"></script><![endif]–>
+    <!–[if lt IE 9]><script type="text/javascript" src="lib/js/json.js" ></script><![endif]–>
 
     <link rel="stylesheet" href="lib/css/dialogPanel.css" />
     <link rel="stylesheet" href="lib/css/gridSystem.css" />
@@ -19,6 +20,9 @@
     <script type="text/javascript" src="lib/js/uni-input.js" ></script>
 
     <script type="text/javascript" src="lib/js/upload.js" ></script>
+    <script type="text/javascript" src="lib/js/imgSelector.js" ></script>
+    <script type="text/javascript" src="lib/js/Notifier.js" ></script>
+    <script type="text/javascript" src="lib/js/LoadBox.js" ></script>
 
     <title>把我说给你听</title>
 </head>
@@ -130,16 +134,16 @@
                 </div>
                 <div class="ln-6 col-12 flex flex-center">
                     <label class="col-9 ln-9 flex flex-center">
-                        <textarea class="col-12 ln-9 circled-border padding-lg cont-text-area uni-font">写下你想说的话吧</textarea>
+                        <textarea id="content-" class="col-12 ln-9 circled-border padding-lg cont-text-area uni-font">写下你想说的话吧</textarea>
                     </label>
                 </div>
                 <div class="ln-1 col-11 flex flex-center circled-border">
                     <img src="resource/dialog-speak/public/text2.png" class="ln-5"/>
                 </div>
                 <div class="ln-4 col-11 padding-mi flex flex-row">
-                    <div class="col-4 ln-12 circled-border margin-sm"></div>
-                    <div class="col-4 ln-12 circled-border margin-sm"></div>
-                    <div class="col-4 ln-12 circled-border margin-sm"></div>
+                    <div class="col-4 ln-12 circled-border margin-sm" content-img-public-serial='1'></div>
+                    <div class="col-4 ln-12 circled-border margin-sm" content-img-public-serial='2'></div>
+                    <div class="col-4 ln-12 circled-border margin-sm" content-img-public-serial='3'></div>
                 </div>
             </div>
             <div class="flex flex-row flex-around ln-1.5 col-12 margin-lg">
@@ -174,11 +178,11 @@
                 </div>
                 <div class="ln-5 col-12 flex flex-center">
                     <label class="col-9 ln-9 flex flex-center">
-                        <textarea class="col-12 ln-9 circled-border padding-lg cont-text-area uni-font">写下你想说的话吧</textarea>
+                        <textarea id="content-private" class="col-12 ln-9 circled-border padding-lg cont-text-area uni-font">写下你想说的话吧</textarea>
                     </label>
                 </div>
                 <div class="ln-1 col-10 flex flex-center padding-mi">
-                    <input id="set-password" type="text" class="ln-12 col-11 uni-font uni-input set-input-holder" value="请设置一个密语吧"/>
+                    <input id="content-password-private" type="text" class="ln-12 col-11 uni-font uni-input set-input-holder" value="请设置一个密语吧" title=""/>
                     <div class="ln-12 col-2 flex flex-center" id="set-pw-hint">
                     </div>
                 </div>
@@ -186,9 +190,9 @@
                     <img src="resource/dialog-speak/public/text2.png" class="ln-5"/>
                 </div>
                 <div class="ln-4 col-11 padding-mi flex flex-row">
-                    <div class="col-4 ln-12 circled-border margin-sm"></div>
-                    <div class="col-4 ln-12 circled-border margin-sm"></div>
-                    <div class="col-4 ln-12 circled-border margin-sm"></div>
+                    <div class="col-4 ln-12 circled-border margin-sm" content-img-private-serial="1"></div>
+                    <div class="col-4 ln-12 circled-border margin-sm" content-img-private-serial="2"></div>
+                    <div class="col-4 ln-12 circled-border margin-sm" content-img-private-serial="3"></div>
                 </div>
             </div>
             <div class="flex flex-row flex-around ln-1.5 col-12 margin-lg">
@@ -299,9 +303,9 @@
 <!-- 提示框 -->
 <div class="dialog-partly" id="notice" style="background-color: white">
     <div class="flex flex-center flex-column dialog-centered">
-        <p class="uni-font" style="color: black">提交成功</p>
+        <p id="notice-content" class="uni-font" style="color: black">系统异常</p>
         <div class="ln-3 flex flex-center flex-column" dialog-close-target="#notice">
-            <p class="uni-font padding-none margin-none" style="color: black">确认</p>
+            <p id="notice-confirm" class="uni-font padding-none margin-none" style="color: black">确认</p>
         </div>
     </div>
 </div>

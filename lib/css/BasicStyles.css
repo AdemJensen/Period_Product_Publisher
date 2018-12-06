@@ -22,10 +22,9 @@ body {
     -moz-appearance: none;
     -webkit-appearance: none;
     border-top-width: 0;
-    border-left-width: 0;
     border-right-width: 0;
-    border-bottom-width: 2px;
-    border-bottom-color: white;
+    border-bottom: 2px white;
+    border-left-width: 0;
 }
 .cont-text-area {
     background-color: transparent;
