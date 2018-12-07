@@ -59,7 +59,7 @@
 
 <!-- "道"主界面 -->
 <div class="dialog general-background" id="dialog-speak">
-    <div class="dialog-content-fade ln-12">
+    <div id="dialog-speak-contents" class="dialog-content-fade ln-12">
         <div class="flex flex-row flex-around padding-sm decorate-header">
             <img src="resource/public/decorate-header/1.png" class="ln-12"/>
             <img src="resource/public/decorate-header/2.png" class="ln-12"/>
@@ -121,7 +121,7 @@
 
 <!-- "道"小盒子 -->
 <div class="dialog general-background ln-12" id="dialog-speak-public">
-    <div class="dialog-content-fade ln-12">
+    <div id="dialog-speak-public-contents" class="dialog-content-fade ln-12">
         <div class="flex flex-row flex-around padding-sm decorate-header">
             <img src="resource/public/decorate-header/1.png" class="ln-12"/>
             <img src="resource/public/decorate-header/2.png" class="ln-12"/>
@@ -171,7 +171,7 @@
 
 <!-- "道"私密盒子 -->
 <div class="dialog general-background ln-12" id="dialog-speak-private">
-    <div class="dialog-content-fade ln-12">
+    <div id="dialog-speak-private-contents" class="dialog-content-fade ln-12">
         <div class="flex flex-row flex-around padding-sm decorate-header">
             <img src="resource/public/decorate-header/1.png" class="ln-12"/>
             <img src="resource/public/decorate-header/2.png" class="ln-12"/>
@@ -302,7 +302,7 @@
                 <textarea disabled id="hear-content" class="col-8 ln-8 circled-border cont-text-area padding-lg uni-font" title=""></textarea>
             </div>
             <div class="flex flex-row flex-around ln-2 col-12 margin-lg">
-                <div class="flex flex-column flex-center ln-12" dialog-close-target="#dialog-hear-content">
+                <div class="flex flex-column flex-center ln-12" dialog-close-target="#dialog-hear-content" onclick="hideAll();">
                     <img src="resource/public/icon_back.png" class="ln-7"/>
                     <img src="resource/public/text_back.png" class="ln-5"/>
                 </div>
