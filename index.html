@@ -9,6 +9,7 @@
     <!–[if lt IE 9]><script src="lib/js/css3-mediaQueries.js"></script><![endif]–>
     <!–[if lt IE 9]><script src="lib/js/html5.js"></script><![endif]–>
     <!–[if lt IE 9]><script type="text/javascript" src="lib/js/json.js" ></script><![endif]–>
+    <!–[if lt IE 9]><script type="text/javascript" src="lib/js/md5.js" ></script><![endif]–>
 
     <link rel="stylesheet" href="lib/css/dialogPanel.css" />
     <link rel="stylesheet" href="lib/css/gridSystem.css" />
@@ -23,6 +24,7 @@
     <script type="text/javascript" src="lib/js/imgSelector.js" ></script>
     <script type="text/javascript" src="lib/js/Notifier.js" ></script>
     <script type="text/javascript" src="lib/js/LoadBox.js" ></script>
+    <script type="text/javascript" src="lib/js/ValidatePassword.js" ></script>
 
     <title>把我说给你听</title>
 </head>
@@ -233,7 +235,7 @@
         </div>
         <div class="col-12 ln-12 padding-none background flex flex-center flex-column" style="height: 93%">
             <div class="flex flex-row flex-around ln-5 col-12">
-                <div class="flex flex-column flex-center" dialog-target="#dialog-hear-content">
+                <div class="flex flex-column flex-center" onclick="fetchPublic()">
                     <img src="resource/public/select-box-type/box-public.png" class="ln-8"/>
                     <img src="resource/public/select-box-type/text-public.png" class="ln-2"/>
                     <img src="resource/public/select-box-type/claw-public.png" class="ln-2"/>
@@ -273,7 +275,7 @@
                             <input id="password" type="text" class="ln-12 col-12 uni-font uni-input pass-input-holder" value="请输入TA的密语"/>
                         </label>
                     </div>
-                    <img class="col-3" src="resource/dialog-hear/box-password/submit.png"/>
+                    <img class="col-3" src="resource/dialog-hear/box-password/submit.png" onclick="fetchPrivate()"/>
                 </div>
             </div>
             <div class="flex flex-column flex-center ln-2 margin-mi" dialog-close-target="#dialog-hear-password">
@@ -297,7 +299,7 @@
         </div>
         <div class="col-12 padding-none background flex flex-center flex-column" style="height: 93%">
             <div id="hear-container" class="flex flex-column flex-center ln-9 col-10">
-                <div id="hear-content" class="col-8 ln-8 circled-border padding-lg uni-font"></div>
+                <textarea disabled id="hear-content" class="col-8 ln-8 circled-border cont-text-area padding-lg uni-font" title=""></textarea>
             </div>
             <div class="flex flex-row flex-around ln-2 col-12 margin-lg">
                 <div class="flex flex-column flex-center ln-12" dialog-close-target="#dialog-hear-content">
