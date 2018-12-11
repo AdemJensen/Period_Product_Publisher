@@ -34,9 +34,9 @@ body {
 }
 #decorate-cap {
     position: absolute;
-    left: 13%;
-    top: 13%;
-    width: 20%;
+    left: 17%;
+    top: 11.5%;
+    width: 17%;
     transform: translate(-50%,-50%);
 }
 .decorate-santa1 {
