@@ -28,8 +28,3 @@
 .dialog-content-fade {
     display: none;
 }
-
-.swal-overlay {
-
-    background-color: rgba(0, 0, 0, 1);
-}
