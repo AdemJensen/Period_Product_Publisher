@@ -11,6 +11,8 @@
     <!–[if lt IE 9]><script type="text/javascript" src="lib/js/json.js" ></script><![endif]–>
     <!–[if lt IE 9]><script type="text/javascript" src="lib/js/md5.js" ></script><![endif]–>
 
+    <script src="lib/js/sweetalert.js"></script>
+
     <link rel="stylesheet" href="lib/css/dialogPanel.css" />
     <link rel="stylesheet" href="lib/css/gridSystem.css" />
     <script type="text/javascript" src="lib/js/dialogPanel.js" ></script>
@@ -22,7 +24,6 @@
 
     <script type="text/javascript" src="lib/js/upload.js" ></script>
     <script type="text/javascript" src="lib/js/imgSelector.js" ></script>
-    <script type="text/javascript" src="lib/js/Notifier.js" ></script>
     <script type="text/javascript" src="lib/js/LoadBox.js" ></script>
     <script type="text/javascript" src="lib/js/ValidatePassword.js" ></script>
 
@@ -317,16 +318,6 @@
 <div class="dialog" id="loading-icon">
     <div class="flex flex-center flex-column dialog-centered">
         <img src="resource/public/loading.gif"/>
-    </div>
-</div>
-
-<!-- 提示框 -->
-<div class="dialog-partly" id="notice" style="background-color: white">
-    <div class="flex flex-center flex-column dialog-centered">
-        <p id="notice-content" class="uni-font" style="color: black">系统异常</p>
-        <div class="ln-3 flex flex-center flex-column" dialog-close-target="#notice">
-            <p id="notice-confirm" class="uni-font padding-none margin-none" style="color: black">确认</p>
-        </div>
     </div>
 </div>
 
