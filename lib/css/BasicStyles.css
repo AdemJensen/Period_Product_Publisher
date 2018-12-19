@@ -9,6 +9,9 @@ body {
     overflow: hidden;
 }
 .decorate-header {
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 7px;
     height: 7%;
 }
 .uni-font {
