@@ -4,6 +4,7 @@ html {
     font-size: 25px;
     color: white;
 }
+img{ pointer-events: none; }
 body {
     height: 100%;
     overflow: hidden;
