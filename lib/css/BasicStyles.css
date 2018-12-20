@@ -54,6 +54,12 @@ body {
     bottom: 0;
     width: 33%;
 }
+.decorate-santa2-sm {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 25%;
+}
 .decorate-polygon {
     position: absolute;
     left: 10%;
