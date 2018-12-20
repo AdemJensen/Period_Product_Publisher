@@ -52,8 +52,7 @@ body {
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 33%;
-    z-index: 10000;
+    width: 20%;
 }
 .decorate-polygon {
     position: absolute;
