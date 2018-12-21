@@ -20,7 +20,7 @@
 
     <link rel="stylesheet" href="lib/css/BasicStyles.css" />
 
-    <script type="text/javascript" src="lib/js/ScreenDirectionListener.js" ></script>
+    <script type="text/javascript" src="lib/js/MasterLoader.js" ></script>
     <script type="text/javascript" src="lib/js/uni-input.js" ></script>
 
     <script type="text/javascript" src="lib/js/upload.js" ></script>
@@ -31,24 +31,17 @@
     <title>把我说给你听</title>
 </head>
 <body class="margin-none">
-<div class="flex flex-row flex-around decorate-header">
-    <img alt="" src="resource/public/decorate-header/1.png" class="ln-12"/>
-    <img alt="" src="resource/public/decorate-header/2.png" class="ln-12"/>
-    <img alt="" src="resource/public/decorate-header/3.png" class="ln-12"/>
-    <img alt="" src="resource/public/decorate-header/4.png" class="ln-12"/>
-    <img alt="" src="resource/public/decorate-header/5.png" class="ln-12"/>
-</div>
-<div class="col-12 padding-none background" style="height: 93%">
-    <div class="col-12 ln-3.7 flex flex-center" style="margin-top: 15px;">
+<div class="col-12 ln-12 flex flex-column flex-between padding-none background">
+    <div class="col-12 ln-3.7 flex flex-center" style="margin-top: 40px;">
         <img alt="" id="decorate-cap" src="resource/master/cap.png" />
-        <div class="ln-11 col-9 circled-border flex flex-center"  >
-            <img alt="" src="resource/public/indexText_spaced.png" class="ln-11"/>
+        <div class="ln-11 col-10 circled-border flex flex-center"  >
+            <img alt="" src="resource/public/indexText_spaced.png" class="ln-max-11 col-max-11"/>
         </div>
     </div>
     <div class="col-12 ln-6 flex flex-center">
-        <img alt="" src="resource/public/santa.png" class="ln-11 margin-lg" />
+        <img alt="" src="resource/public/santa.png" class="ln-12 margin-lg" />
     </div>
-    <div class="col-12 ln-2 flex flex-between margin-none general-background">
+    <div class="col-12 ln-2 flex flex-between margin-none">
         <div class="flex flex-center ln-12" dialog-target="#dialog-speak">
             <img alt="" src="resource/master/light.png" class="ln-8"/>
             <img alt="" src="resource/master/speak.png" class="ln-6"/>
@@ -59,6 +52,27 @@
         </div>
     </div>
 
+</div>
+
+<!-- 标题页面 -->
+<div class="dialog topic-background background" id="dialog-topic">
+    <div id="dialog-topic-contents" class="ln-12">
+        <div class="flex flex-row flex-center ln-2.5">
+            <img alt="" src="resource/dialog-topic/decorate-header.png" class="ln-12"/>
+        </div>
+        <div class="flex flex-row flex-center ln-1">
+            <img alt="" src="resource/dialog-topic/topic-text.png" class="ln-max-12 col-max-11" />
+        </div>
+        <div class="flex flex-row flex-center ln-1">
+            <img alt="" src="resource/dialog-topic/decorate-hint.png" class="ln-9" />
+        </div>
+        <div class="flex flex-row flex-center ln-1.5" dialog-close-target="#dialog-topic">
+            <img alt="" src="resource/dialog-topic/btn-forward.png" class="ln-10" />
+        </div>
+        <div class="flex flex-row flex-center footer">
+            <img alt="" src="resource/dialog-topic/decorate-bottom.png" class="col-max-12 ln-max-6" />
+        </div>
+    </div>
 </div>
 
 <!-- "道"主界面 -->
@@ -105,7 +119,7 @@
         </div>
         <div class="col-12 padding-none background flex flex-center flex-column" style="height: 93%">
             <div class="col-6 ln-5 circled-border padding-lg margin-mi flex flex-center" >
-                <img alt="" src="resource/dialog-hear/master/text.png" class="ln-11"/>
+                <img alt="" src="resource/dialog-hear/master/text.png" class="ln-max-11 col-max-11"/>
             </div>
             <div class="col-6 ln-7 flex flex-around flex-column margin-lg">
                 <div class="ln-3 flex flex-center flex-column" dialog-target="#dialog-hear-select-type">

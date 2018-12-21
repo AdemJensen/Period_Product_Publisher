@@ -37,10 +37,10 @@ body {
 }
 #decorate-cap {
     position: absolute;
-    left: 17%;
-    top: 11.5%;
-    width: 17%;
-    transform: translate(-50%,-50%);
+    left: 8%;
+    top: 40px;
+    width: 20%;
+    transform: translate(-30%,-50%);
 }
 .decorate-santa1 {
     position: absolute;
@@ -52,7 +52,8 @@ body {
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 33%;
+    max-width: 33%;
+    max-height: 40%;
 }
 .decorate-santa2-sm {
     position: absolute;
@@ -69,6 +70,10 @@ body {
 
 .general-background {
     background-color: #0f674b;
+}
+
+.topic-background {
+    background-color: #055257;
 }
 
 .screen-direction-detector-content {
