@@ -108,7 +108,14 @@
     float: left;
     max-width: 91.6%;
 }
+.col-max-12 {
+    float: left;
+    max-width: 100%;
+}
 
+.ln-max-6 {
+    max-height: 50%;
+}
 .ln-max-11 {
     max-height: 91.6%;
 }
