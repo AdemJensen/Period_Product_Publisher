@@ -64,6 +64,9 @@
 .ln-2 {
     height: 16.6%;
 }
+.ln-2\.5 {
+    height: 20%;
+}
 .ln-3 {
     height: 25%;
 }
@@ -99,4 +102,16 @@
 }
 .ln-12 {
     height: 100%;
+}
+
+.col-max-11 {
+    float: left;
+    max-width: 91.6%;
+}
+
+.ln-max-11 {
+    max-height: 91.6%;
+}
+.ln-max-12 {
+    max-height: 100%;
 }
