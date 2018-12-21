@@ -4,7 +4,7 @@ html {
     font-size: 25px;
     color: white;
 }
-img{ pointer-events: none; }
+img { pointer-events: none; }
 body {
     height: 100%;
     overflow: hidden;
@@ -133,6 +133,9 @@ body {
 }
 .margin-lg {
     margin: 25px 25px;
+}
+.border-none {
+    border: 0;
 }
 
 .circled-border {
