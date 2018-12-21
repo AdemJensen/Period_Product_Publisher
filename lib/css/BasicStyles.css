@@ -52,7 +52,8 @@ body {
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 33%;
+    max-width: 33%;
+    max-height: 40%;
 }
 .decorate-santa2-sm {
     position: absolute;

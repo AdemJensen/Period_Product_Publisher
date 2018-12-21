@@ -113,6 +113,9 @@
     max-width: 100%;
 }
 
+.ln-max-5 {
+    max-height: 41.6%;
+}
 .ln-max-6 {
     max-height: 50%;
 }
